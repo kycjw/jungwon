@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정원짱 포폴^^</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/jquery.fullpage.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <link rel="stylesheet" href="/css/animation.css">
+    <!-- <link rel="stylesheet" href="/css/xeicon.min.css"> -->
+    <!-- <link rel="stylesheet" href="/css/animate.css"> -->
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script src="/js/jquery.fullpage.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/project.js"></script>
+    <!-- <script src="/js/wow.min.js"></script> -->
+    <script type="text/javascript">
+        var windowWidth = window.screen.width
+        setViewPort(windowWidth);
+        function setViewPort(w_width) {
+            if (w_width <= 359 ){
+                $("meta[name=viewport]").attr("content", "width=359, maximum-scale=2.0, user-scalable=no, target-densitydpi=medium-dpi");
+            } else {
+                $("meta[name=viewport]").attr("content", "width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi");
+            }
+        }
+        $(window).resize(function(){
+            var windowWidth = window.screen.width
+            setViewPort(windowWidth);
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- <section id="intro">
+            <div class="bg">
+                <button type="button" class="clickBtn">click</button>
+            </div>
+            <div class="txt">
+                <p>
+                    <span>w</span>
+                    <span>e</span>
+                    <span>l</span>
+                    <span>c</span>
+                    <span>o</span>
+                    <span>m</span>
+                    <span>e</span>
+                </p>
+            </div>
+        </section> -->
+        <aside id="naviBtn">
+            <ul>
+                <li class="on"><button type="button"></button></li>
+                <li><button type="button"></button></li>
+                <li><button type="button"></button></li>
+                <li><button type="button"></button></li>
+            </ul>
+        </aside>
+        <div id="fullpage">
+            <section id="mainVisual" class="section">
+                <div class="inner1720">
+                    <div class="mvTit">
+                        <h2>
+                            <span>port</span>
+                            <span>folio</span>
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="section">
+                <div class="inner1200">
+                    <div class="conBox">
+                        <div class="profile">
+                            <div class="img"><img src="/img/jungwon.jpg" alt=""></div>
+                        </div>
+                        <div class="introduce">
+                            <div class="tit">
+                                <h3>hi, <br>i'm jungwon</h3>
+                            </div>
+                            <div class="txt">
+                                <ul>
+                                    <li>최정원 <br>kycjw94@naver.com</li>
+                                    <li>2019.03 ~ 2019.09 <br>스마트웹디자인&프론트엔드 수료</li>
+                                    <li>2019.11 ~ 2022.02 <br>(주)웹모아 웹퍼블리셔 근무</li>
+                                </ul>
+                                <p>간단한 유지보수부터 시작하여 전체구축까지 
+                                    다양한 분야의 프로젝트를 경험해봤습니다.
+                                    html로 웹사이트의 틀을 잡고 css를 사용하여 스타일을 적용하였습니다.
+                                    미디어쿼리로 PC 뿐만 아니라 다양한 기기에서도 편리하게 이용할 수 있게 작업하였습니다. 
+                                    css와 자바스크립트로 사용자의 흥미를 유발하고 웹사이트의 컨셉에 어울리는 애니메이션 효과를 구현하였습니다.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </section>
+            <section id="project" class="section">
+                <div class="inner1720">
+                    <div class="conBox">
+                        <div class="titB">project</div>
+                        <div class="flexB">
+                            <div class="txtBox">
+                                <div class="info">
+                                    <dl>
+                                        <dt>지아이셀</dt>
+                                        <dd>
+                                            <p>반응형 작업</p>
+                                            <p>참여도(기본구축 100% + 전체서브 100%)</p>
+                                            <p>메인 fullpage.js 사용하여 작업</p>
+                                        </dd>
+                                    </dl>
+                                    <p class="desc">프로젝트 설명~~</p>
+                                </div>
+                                <a href="#;" target="_blank" class="viewBtn">
+                                    <span>view</span>
+                                </a>
+                            </div>
+                            <div class="listBox">
+                                <div class="inner">
+                                    <article>
+                                        <p class="tit">지아이셀</p>
+                                        <div class="img"><img src="/img/img_gicell.jpg" alt=""></div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="footer" class="section">
+                <div class="inner1400">
+                    <div class="txt">
+                        <p class="thanks">thank you <span>2019-2022</span></p>
+                        <p class="copy">COPYRIGHT © CHOI JUNG WON ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* 
+font-family: 'Fredoka One', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+
+.inner1720{width: 100%; max-width: 1720px; margin: 0 auto; position: relative; box-sizing: border-box;}
+.inner1400{width: 100%; max-width: 1400px; margin: 0 auto; position: relative; box-sizing: border-box;}
+.inner1200{width: 100%; max-width: 1200px; margin: 0 auto; position: relative; box-sizing: border-box;}
+.hiddenBox{min-width: 100%; overflow: hidden;}
+
+body{
+    
+}
+
+

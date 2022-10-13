@@ -1,0 +1,226 @@
+@media screen and (max-width:1200px), (max-height:800px) {
+    /* 풀페이지 네비게이션 버튼 */
+    #naviBtn{
+        display: none;
+    }
+
+    /* 메인비주얼 */
+    #mainVisual .mvTit h2 span{
+        font-size: 100px;
+    }
+
+    /* about */
+    #about{
+        padding:100px 0;
+    }
+    #about .introduce .tit{
+        margin-bottom: 30px;
+    }
+    #about .introduce .txt{
+        display: block;
+    }
+    #about .introduce .txt ul{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #about .introduce .txt p{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    /* project */
+    #project{
+        padding: 100px 0;
+    }
+    #project .conBox{
+        max-height: none;
+        padding: 60px 30px;
+    }
+    #project .conBox .titB{
+        position: static;
+        padding: 0;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    #project .conBox .flexB{
+        display: block;
+        padding: 0;
+    }
+    #project .conBox .flexB > div{
+        width: 100%;
+        height: auto;
+    }
+    #project .conBox .flexB .txtBox{
+        margin-bottom: 40px;
+    }
+    
+    #project .conBox .txtBox .info > dl dt{
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
+
+    #project .conBox .txtBox .viewBtn{
+        margin-top: 20px;
+    }
+
+    /* footer */
+    #footer{
+        padding: 100px 0;
+    }
+    #footer .txt .thanks{
+        margin-bottom: 80px;
+        font-size: 80px;
+    }
+    
+
+
+
+}
+
+@media screen and (max-width:1720px) {
+    .inner1720{
+        padding: 0 16px;
+    }
+
+    /* 메인비주얼 */
+    #mainVisual .mvTit h2 span{
+        font-size: 150px;
+    }
+    #mainVisual .mvTit h2 span:nth-child(1) {
+        background-position: left 35%;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .inner1400{
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .inner1200{
+        padding: 0 16px;
+    }
+
+    
+
+
+}
+
+@media screen and (max-width:768px) {
+    /* about */
+    #about .conBox{
+        display: block;
+    }
+    #about .profile{
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+        position: absolute;
+        right: 30px;
+        top: -50px;
+    }
+    #about .introduce .tit{
+        margin-bottom: 15px;
+    }
+    #about .introduce .tit h3{
+        font-size: 30px;
+    }
+    #about .introduce .txt *{
+        font-size: 15px;
+    }
+    #about .introduce .txt ul{
+        margin-bottom: 15px;
+    }
+    #about .introduce .txt ul li+li{
+        margin-top: 10px;
+    }
+    #about .introduce{
+        width:100%;
+        padding-left: 0;;
+    }
+
+    /* project */
+    #project .conBox{
+        padding: 40px 20px;
+    }
+    #project .conBox .listBox article{
+        width: calc(50% - 10px);
+        margin-right: 20px;
+    }
+    #project .conBox .listBox article:nth-child(3n){
+        margin-right: 20px;
+    }
+    #project .conBox .listBox article:nth-child(2n){
+        margin-right: 0;
+    }
+    #project .conBox .titB{
+        margin-bottom: 20px;
+    }
+    #project .conBox .txtBox .info > dl dt{
+        font-size: 30px;
+    }
+    #project .conBox .txtBox .info > dl dd p{
+        font-size: 15px;
+    }
+    #project .conBox .txtBox .viewBtn{
+        width: 120px;
+        height: 40px;
+    }
+    #project .conBox .txtBox .viewBtn span{
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    /* footer */
+    #footer .txt .thanks{
+        margin-bottom: 80px;
+        font-size: 50px;
+    }
+    #footer .txt .thanks > span{
+        margin-top: 15px;
+        font-size: 16px;
+    }
+    #footer .txt .copy{
+        font-size: 13px;
+    }
+   
+
+}
+
+@media screen and (max-width:640px) {
+    #mainVisual .mvTit h2 span{
+        font-size: 70px;
+    }
+    #mainVisual .mvTit h2 span:nth-child(1) {
+        background-position: left 17%;
+    }
+   
+
+}
+
+@media screen and (max-width:480px) {
+    #about{
+        padding: 100px 0 70px;
+    }
+    #about .profile{
+        max-width: 150px;
+    }
+
+    /* project */
+    #project{
+        padding: 70px 0;
+    }
+    #project .conBox .listBox article .tit{
+        font-size: 14px;
+    }
+
+    /* footer */
+    #footer{
+        padding: 70px 0;
+    }
+    #footer .txt .thanks{
+        margin-bottom: 50px;
+    }
+
+}
