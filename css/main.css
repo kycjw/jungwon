@@ -438,7 +438,7 @@
     color:#222;
 }
 #project .conBox .listBox{
-    /* height: 500px; */
+    height: 500px;
 }
 #project .conBox .listBox .inner{
     display: flex;
