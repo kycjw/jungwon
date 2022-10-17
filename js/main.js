@@ -1,8 +1,7 @@
 $(window).ready(function(){
-    const win_h = $(window).height();
-    console.log("win_h", win_h);
-    // $("#wrap").height()
+
     $("body").addClass("hiddenBox");
+    
     // source:  https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
     let vh = window.innerHeight * 0.01;
@@ -28,11 +27,6 @@ $(window).ready(function(){
 					console.log("nextIndex",nextIndex)
                     $("#naviBtn ul li").removeClass("on");
 					$("#naviBtn ul li").eq(nextIndex - 1).addClass("on");
-					if(nextIndex == 1){  // 스크롤 하고 메인비주얼로 돌아왔을 때 기능들 다시 시작
-						
-						
-					}
-
                 },
                 'afterLoad' : function (anchorLink, index) {
 					
@@ -50,17 +44,12 @@ $(window).ready(function(){
                 $.fn.fullpage.destroy('all');  //풀페이지 삭제
                 fullPageCreated = false;			
 
-                
-			
-
             }
 			
         }else{
             if(fullPageCreated == false){
                 createFullpage();
                 fullPageCreated = true;
-
-                
 				
             }
         }
@@ -106,28 +95,27 @@ $(window).ready(function(){
         
         return delay;
 
-
     }
 
 
- 
-
-    
     delay_num()
    
     
-
+    //인트로 화면 클릭했을 때
     $("#intro .bg").on("click", function(){
         window.scrollTo( 0, 1 );
         $("body").removeClass("hiddenBox");
         $("#intro").animate({
             opacity:0
         },1000)
+
+        
         setTimeout(function(){
             $("#intro").hide();
             $("#mainVisual").addClass("on")
 
-            var time=0;
+            // 글자 하나씩 보여지는 애니메이션 효과
+            /*var time=0;
             var len02 = $("#mainVisual .mvTit h2").find("span").length;
             var txt_timer = setInterval(function(){
                 console.log("time",time)
@@ -137,7 +125,8 @@ $(window).ready(function(){
                     clearInterval(txt_timer);
                 }
             },100)
-            
+            */
+
         },1000)
        
     });

@@ -297,6 +297,7 @@ $(window).ready(function(){
 
         }
     ]
+
     
     let listBox = $("#project .listBox .inner");
     let txtBox = $("#project .txtBox");
@@ -308,7 +309,7 @@ $(window).ready(function(){
         txtBox.find(".info > dl > dt").html(projectList[0].title);
     };
 
-    for(let i = 0; i < projectList.length; i++){
+    for(let i = 0; i < projectList.length; i++){ //첫번째 리스트 복사해서 프로젝트 개수만큼 넣어줌
         let listClone = listBox.children("article:eq(0)").clone();
         if(i < projectList.length - 1){
             listBox.append(listClone);
@@ -341,21 +342,18 @@ $(window).ready(function(){
     });
 
 
-    
+    //모바일 화면에서 프로젝트 리스트 박스 높이값 맞춰줌
     boxResize();
     function boxResize(){
         if($(window).width() <= 1200 || $(window).height() <= 800){
-            var art = $("#project .conBox .listBox article").length
-            console.log("art",art)
-            
-            var articleH = $("#project .conBox .listBox article").height();
+            let art = $("#project .conBox .listBox article").length
+            let articleH = $("#project .conBox .listBox article").height();
             console.log("articleH",articleH)
     
             $("#project .conBox .listBox").css({
                 "height":articleH*2
             });
         }
-        
     }
     $(window).resize(function(){
         boxResize();
