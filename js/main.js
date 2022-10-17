@@ -1,7 +1,7 @@
 $(window).ready(function(){
 
     $("body").addClass("hiddenBox");
-    
+
     // source:  https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
     let vh = window.innerHeight * 0.01;
@@ -71,6 +71,7 @@ $(window).ready(function(){
 
 
     //인트로 텍스트 랜덤 애니메이션
+    delay_num();
     function delay_num(){
         let delay=[];
         let len = $("#intro .txt > p").children("span").length;
@@ -98,7 +99,7 @@ $(window).ready(function(){
     }
 
 
-    delay_num()
+    
    
     
     //인트로 화면 클릭했을 때

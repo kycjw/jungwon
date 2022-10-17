@@ -345,14 +345,17 @@ $(window).ready(function(){
     //모바일 화면에서 프로젝트 리스트 박스 높이값 맞춰줌
     boxResize();
     function boxResize(){
+        let articleH = 100;
         if($(window).width() <= 1200 || $(window).height() <= 800){
             let art = $("#project .conBox .listBox article").length
-            let articleH = $("#project .conBox .listBox article").height();
+            articleH = $("#project .conBox .listBox article").height();
             console.log("articleH",articleH)
     
             $("#project .conBox .listBox").css({
                 "height":articleH*2
             });
+        }else{
+            return articleH;
         }
     }
     $(window).resize(function(){
