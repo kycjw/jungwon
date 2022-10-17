@@ -56,6 +56,7 @@
     top: 1px;
 }
 
+
 /* 인트로 */
 #intro{
     opacity:1;
@@ -70,12 +71,8 @@
 }
 
 #intro .bg{
-    /* width: clamp(30vw, 25vw, 80%);
-    height: clamp(35vw, 30vw, 80%); */
     width: clamp(30vw, 580px, 80%);
     height: clamp(35vw, 690px, 60%);
-    /* max-width: 30vw;
-    max-height: 35vw; */
     /* max-width: 580px;
     max-height: 690px; */
     box-shadow: 0 0 50px rgb(40 128 191 / 50%);
@@ -142,6 +139,7 @@
    
 }
 
+
 /* 메인비주얼 */
 #mainVisual{
     width: 100%;
@@ -201,7 +199,6 @@
 #mainVisual .mvTit h2 span:nth-child(2){
     background-position: right bottom;
 }
-
 
 
 /* about */
@@ -302,8 +299,8 @@
     width: calc(100% - 300px);
     padding-left: 20px;
     line-height: 2;
+    word-break:keep-all;
 }
-
 
 
 /* project */
