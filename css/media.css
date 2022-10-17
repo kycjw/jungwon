@@ -101,10 +101,6 @@
     .inner1200{
         padding: 0 16px;
     }
-
-    
-
-
 }
 
 @media screen and (max-width:768px) {
@@ -163,6 +159,10 @@
     #project .conBox .txtBox .info > dl dd p{
         font-size: 15px;
     }
+    #project .conBox .txtBox .info > .desc{
+        margin:15px 0;
+        font-size: 14px;
+    }
     #project .conBox .txtBox .viewBtn{
         width: 120px;
         height: 40px;
@@ -189,6 +189,7 @@
 }
 
 @media screen and (max-width:640px) {
+    /* 메인비주얼 */
     #mainVisual .mvTit h2 span{
         font-size: 70px;
     }
