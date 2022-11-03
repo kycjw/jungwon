@@ -63,7 +63,8 @@ $(window).ready(function(){
             ],
             link : "http://www.inmarkglobal.com/"
         },
-        {
+       /* 
+       {
             title : "펄송",
             imgName : "img_purrsong",
             infoTxt : [
@@ -72,7 +73,8 @@ $(window).ready(function(){
             ],
             link : "https://purrsong.com/",
             desc : "개발은 고객사에서 하였고 현재는 고객사에서 유지보수를 한 것으로 보입니다."
-        },
+        }, 
+        */
         {
             title : "쥬피터익스프레스",
             imgName : "img_jupiter",
